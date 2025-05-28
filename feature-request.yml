@@ -1,0 +1,92 @@
+name: Feature
+description: Add a new app feature
+title: "[Feature]: "
+labels: ["feature", "enhancement"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please fill out the sections below to help us understand your request.
+
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline
+      description: When does this feature need to be completed? (leave blank if no specific deadline)
+      placeholder: "e.g., 2025-06-15 or 'End of Q2'"
+    validations:
+      required: false
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      description: What is the feature and how does it work?
+      placeholder: Describe the feature functionality, user interface, and how users will interact with it...
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What user problem or need does this feature address?
+      placeholder: Explain the user pain point, business case, or opportunity this feature will solve...
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: To Do
+      description: List the main tasks or components needed to implement this feature
+      placeholder: |
+        - [ ] Design user interface mockups
+        - [ ] Implement backend API endpoints
+        - [ ] Add frontend components
+        - [ ] Write tests
+        - [ ] Update documentation
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Criteria of Acceptance
+      description: What are the minimum requirements for the feature alpha/MVP?
+      placeholder: |
+        Define the specific, measurable criteria that must be met for this feature to be considered complete:
+        - User can successfully...
+        - Feature handles edge cases like...
+        - Performance meets requirements of...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: additional_info
+    attributes:
+      label: Additional Information
+      description: Please check any that apply
+      options:
+        - label: This feature affects existing functionality
+          required: false
+        - label: This feature requires database changes
+          required: false
+        - label: This feature needs third-party integrations
+          required: false
+        - label: I can help implement this feature
+          required: false
