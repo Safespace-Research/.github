@@ -1,6 +1,6 @@
 ---
-name: UI / Design Enhancement
-about: Propose a new UI component, restyling, or visual improvement
+name: UI-UX / Design Enhancement
+about: Propose a new UI component, restyling, visual or usability improvement
 title: "[ui] "
 labels: ui, enhancement
 assignees: ''
